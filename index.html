@@ -54,23 +54,23 @@ body {
     <button onclick="adicionar('+')">+</button>
 
     <script>
-      funcion adicionar(valor) {
-        document.getElementByld("display").value +=
-          valor;
-      }
+       function adicionar(valor) {
+          document.getElementByld("display").value +=
+             valor;
+       }
 
-      function calcular() {
-        document.getElementByld("display").value = 
-          eval(document.getElementByld("display").value);
-      }
+       function calcular() {
+          var resultado = 
+             document.getElementByld("display").value;
+          document.getElementByld("display").value = 
+             eval(resultado);
+       }
 
-      function limpar() {
-        document.getElementByld("display").value = "";
-      }
+       function limpar() {
+          document.getElementByld("display").value ="";
+       }
     </script>
-
-  </body>
-</html>
+      
       
     
     
