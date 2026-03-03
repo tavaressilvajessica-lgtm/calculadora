@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Calculadora</title>
+<style>
+body {
+   font-family: Arial;
+  text-align: center;
+  margin-top: 50px;
+}
+  button {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    font-size: 18px;
+  }
+  input {
+    width:220px;
+    heigth: 40px;
+    font-size: 18px;
+    text-align: right;
+  }
+  </style>
+</head>
+  <body>
+
+    <h2>calculadora</h2>
+
+    <input type="text" id="display" disabled>
+    <br>
+
+    <button onclick="adicionar('7')">7</button>
+    <button onclick="adicionar('8')">8</button>
+    <button onclick="adicionar('9')">9</button>
+    <button onclick="adicionar('/')">/</button>
+    <br>
+
+    <button onclick="adicionar('4')">4</button>
+    <button onclick="adicionar('5')">5</button>
+    <button onclick="adicionar('5')">6</button>
+    <button onclick="adicionar('*')">*</button>
+    <br>
+
+    <button onclick="adicionar('1')">1</button>
+    <button onclick="adicionar('2')">2</button>
+    <button onclick="adicionar('3')">3</button>
+    <button onclick="adicionar('-')">+</button>
+    <br>
+
+    <button onclick="adicionar('0')">0</button>
+    <button onclick="limpar()">C</button>
+    <button onclick="calcular()">=</button>
+    <button onclick="adicionar('+')">+</button>
+
+    <script>
+      funcion adicionar(valor) {
+        document.getElementByld("display").value +=
+          valor;
+      }
+
+      function calcular() {
+        document.getElementByld("display").value = 
+          eval(document.getElementByld("display").value);
+      }
+
+      function limpar() {
+        document.getElementByld("display").value = "";
+      }
+    </script>
+
+  </body>
+</html>
+               
+        
+                                
+    </script>
+      
+    
+    
+    
+    
+    
+     
