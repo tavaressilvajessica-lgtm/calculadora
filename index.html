@@ -16,10 +16,10 @@ body {
     font-size: 18px;
   }
   input {
-    width:220px;
-    heigth: 40px;
+    width: 220px;
+    height: 40px;
     font-size: 18px;
-    text-align: right;
+    text-align: right;>
   }
   </style>
 </head>
@@ -27,7 +27,7 @@ body {
 
     <h2>calculadora</h2>
 
-    <input type="text" id="display" disabled>
+    <input type="text" id="mostrar" disabled>
     <br>
 
     <button onclick="adicionar('7')">7</button>
@@ -38,14 +38,14 @@ body {
 
     <button onclick="adicionar('4')">4</button>
     <button onclick="adicionar('5')">5</button>
-    <button onclick="adicionar('5')">6</button>
+    <button onclick="adicionar('6')">6</button>
     <button onclick="adicionar('*')">*</button>
     <br>
 
     <button onclick="adicionar('1')">1</button>
     <button onclick="adicionar('2')">2</button>
     <button onclick="adicionar('3')">3</button>
-    <button onclick="adicionar('-')">+</button>
+    <button onclick="adicionar('-')">-</button>
     <br>
 
     <button onclick="adicionar('0')">0</button>
@@ -54,22 +54,20 @@ body {
     <button onclick="adicionar('+')">+</button>
 
     <script>
-       function adicionar(valor) {
-          document.getElementByld("display").value +=
-             valor;
-       }
-
+       function adicionar(num) {
+          document.getElementbyId("mostrar").value += num;
+           }
        function calcular() {
-          var resultado = 
-             document.getElementByld("display").value;
-          document.getElementByld("display").value = 
-             eval(resultado);
+       var resultado = document.getElementById("mostrar").value;
+          if(resultado) {
+             document.getElementById("mostrar").value = eval(resultado);
+          }
        }
-
        function limpar() {
-          document.getElementByld("display").value ="";
+          document.getElementById("mostrar").value = "";
        }
     </script>
+          
       
       
     
